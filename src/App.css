@@ -74,3 +74,16 @@ a.disabled {
   margin-left: 15%;
   border-radius: 10%;
 }
+
+.card-header{
+  background-color: #0069D9;
+  color:white;
+  font-size: 20px;
+}
+.mainCard{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.groupcard{
+  margin-top: 20px;
+}

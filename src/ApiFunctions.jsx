@@ -18,7 +18,8 @@ export default class ApiComponent extends React.Component{
     }
 
     handleBack() {
-        window.history.back();
+        const url = window.location.origin
+        window.location.replace(url)
     }
 
     render() {
