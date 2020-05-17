@@ -87,3 +87,6 @@ a.disabled {
 .groupcard{
   margin-top: 20px;
 }
+.countryName{
+  font-weight: bold;
+}

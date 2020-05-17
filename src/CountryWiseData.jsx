@@ -26,25 +26,30 @@ export default class CountryWiseCases extends React.Component{
             
         return(
             <div className="container">
-                <div className="row">
-                    {this.state.data && this.state.data.length >0 && this.state.data.map((obj, i)=>{
-                        return(
-                            <div key={i} className='col-md-4' style={{"marginTop": "10px"}}>
-                                <div className="card">
-                                <div className="card-header" style={{"fontWeight": "bold", "textAlign":"center"}}>
-                                    {obj["country"]}
-                                </div>
-                                <div className="card-body">
-                                    <span> <b>cases :</b> </span>{obj["cases"]} <br></br>
-                                    <span> <b>active :</b> </span>{obj["active"]} <br></br>
-                                    <span> <b>deaths :</b> </span>{obj["deaths"]} <br></br>
-                                    <span> <b>recovered :</b> </span>{obj["recovered"]} <br></br>
-                                </div>
-                                </div>
-                            </div>
-                        )
-                    })}
-                </div>
+                <table className="table table-stripped">
+                    <thead className="">
+                        <tr>
+                            <th>Country Name</th>
+                            <th>Total Cases</th>
+                            <th>Active</th>
+                            <th>Deaths</th>
+                            <th>Recovered</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {this.state.data && this.state.data.length >0 && this.state.data.map((obj, i)=>{
+                            return (
+                                <tr>
+                                    <td className="countryName">{obj["country"]}</td>
+                                    <td>{obj["cases"]}</td>
+                                    <td>{obj["active"]}</td>
+                                    <td>{obj["deaths"]}</td>
+                                    <td>{obj["recovered"]}</td>
+                                </tr>
+                            )
+                        })}
+                    </tbody>
+                </table>
             </div>
         )
     }
