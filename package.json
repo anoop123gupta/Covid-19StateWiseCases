@@ -14,7 +14,7 @@
     "react-pagination-table": "^2.0.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "react-search-box": "^2.0.2",
     "react-search-field": "^1.0.0"
   },
